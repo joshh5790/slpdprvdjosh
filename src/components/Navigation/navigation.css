@@ -1,5 +1,5 @@
 #navbar {
-  position: sticky;
+  position: relative;
   top: 0;
   display: flex;
   justify-content: space-around;
@@ -10,7 +10,7 @@
   width: 100%;
   z-index: 1;
   height: 3rem;
-  
+  background-color: #41305c;
 }
 
 .nav-button {
@@ -22,19 +22,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #41305c;
   cursor: pointer;
+  z-index: 4;
 }
 
 #menu:hover,
 .nav-button:hover {
-  box-shadow: 0 0 5px rgb(244,244,244, 90%);
-  z-index: 2;
+  background-color: #1f172c;
 }
 
-.nav-button.nav-selected {
+#nav-selectbox {
+  position: absolute;
+  height: 100%;
+  width: 34%;
+  z-index: 3;
   background-color: #1f172c;
-  font-weight: bold;
+  transition: 1s;
+}
+
+#nav-selectbox.one {
+  left: 0;
+}
+
+#nav-selectbox.two {
+  left: 33%;
+}
+
+#nav-selectbox.three {
+  left: 66%;
 }
 
 /* #navbar.hideNav {
