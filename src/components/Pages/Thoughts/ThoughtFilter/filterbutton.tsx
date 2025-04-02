@@ -11,7 +11,7 @@ function FilterButton({name, filter, setFilter}: FilterProps) {
     return <div className={`filter-button ${selected ? 'selected' : ''}`} 
         onClick={() => {
             if (setFilter) {
-                setFilter(name)
+                filter === name ? setFilter('all') : setFilter(name)
             }
     }}>
         {name}

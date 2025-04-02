@@ -10,7 +10,7 @@ function Thought({ title, content, tags }: Post) {
     const contentRef = useRef<HTMLDivElement>(null)
 
     return <div className='thought' 
-                style={{ 'maxHeight': `${expand && contentRef.current?.clientHeight ? '10rem' : `calc(${contentRef.current?.clientHeight}px + 6rem)`}`}} 
+                style={{ 'maxHeight': `${expand ? `calc(${contentRef.current?.clientHeight}px + 6rem)` : '10rem'}`}} 
                 onClick={() => setExpand(!expand)}>
         <div className='fade-out' />
         <p className='thought-title'><b>{title}</b></p>
