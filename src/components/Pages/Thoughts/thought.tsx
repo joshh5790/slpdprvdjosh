@@ -9,9 +9,9 @@ function Thought({ title, content, tags }: Post) {
     const [expand, setExpand] = useState(false)
     const contentRef = useRef<HTMLDivElement>(null)
 
-    // remove delay from animation, useref for thought-content height and set it + 10rem as the max-height
-
-    return <div className='thought' style={{ 'maxHeight': `${expand && contentRef.current?.clientHeight ? '10rem' : `calc(${contentRef.current?.clientHeight}px + 6rem)`}`}} onClick={() => setExpand(!expand)}>
+    return <div className='thought' 
+                style={{ 'maxHeight': `${expand && contentRef.current?.clientHeight ? '10rem' : `calc(${contentRef.current?.clientHeight}px + 6rem)`}`}} 
+                onClick={() => setExpand(!expand)}>
         <div className='fade-out' />
         <p className='thought-title'><b>{title}</b></p>
         <div className='post-tags'>

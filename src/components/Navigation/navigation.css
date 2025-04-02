@@ -26,7 +26,7 @@
   z-index: 4;
 }
 
-#menu:hover,
+.nav-button.nav-selected,
 .nav-button:hover {
   background-color: #1f172c;
 }
