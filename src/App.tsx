@@ -17,15 +17,11 @@ function App() {
     <div id="home">
       <PageHead />
       <Navigation select={select} setSelect={setSelect} />
-      <div id="content">
-        <div id='page-switcher' className={`page-${select}`}>
-          <About setSelect={setSelect}/>
-          <Thoughts />
-          <Flowchart />
-        </div>
+      <div id='content' className={`page-${select}`}>
+        <About setSelect={setSelect}/>
+        <Thoughts />
+        <Flowchart />
       </div>
-      <div id='hide-left'/>
-      <div id='hide-right'/>
     </div>
   )
 }

@@ -7,12 +7,12 @@
 }
 
 #about-img {
-    left: 0;
+    left: 2rem;
     margin-top: 2rem;
     border-radius:50%;
     transition: 2s;
     pointer-events: none;
-    width: 100%;
+    width: calc(100% - 4rem);
     user-select: none;
     opacity: 0.7;
 }
