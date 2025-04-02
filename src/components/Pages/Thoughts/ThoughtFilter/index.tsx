@@ -19,7 +19,7 @@ function ThoughtFilter({ filter, setFilter }: ThoughtFilterProps) {
         {filters.map((name: string, index: number) => (
             <FilterButton key={index} name={name} filter={filter} setFilter={setFilter} />
         ))}
-        <div style={{'fontSize': '0.7rem', 'textAlign': 'left'}}>* edgy teen thoughts are from way back when- I don't necessarily agree with them now but I still believe that they are worth thinking about</div>
+        <div style={{'fontSize': '0.7rem', 'textAlign': 'left'}}>* edgy teen thoughts are from way back when- I don't necessarily agree with them now but I still believe that they're worth thinking about</div>
     </div>
 }
 

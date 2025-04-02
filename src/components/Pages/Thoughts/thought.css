@@ -47,11 +47,6 @@
 
 /* expanded view */
 
-.thought.expanded {
-    height: fit-content;
-    max-height: 50rem;    
-}
-
 .thought-content {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(160, 160, 160);
