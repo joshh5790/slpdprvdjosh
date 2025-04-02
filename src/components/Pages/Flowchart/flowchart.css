@@ -1,12 +1,15 @@
 #flowchart {
     width: 100%;
+    overflow-y: scroll;
 }
 
 #flowchart-title {
     font-weight: bold;
+    margin: 2rem;
 }
 
 #flowchart-img {
-    width: 100%;
+    margin: 0 auto;
+    width: calc(100% - 4rem);
     border-radius: 3rem;
 }
