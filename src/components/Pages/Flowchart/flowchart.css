@@ -1,0 +1,12 @@
+#flowchart {
+    width: 100%;
+}
+
+#flowchart-title {
+    font-weight: bold;
+}
+
+#flowchart-img {
+    width: 100%;
+    border-radius: 3rem;
+}

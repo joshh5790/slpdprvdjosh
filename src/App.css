@@ -1,0 +1,59 @@
+#home {
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(#855988,#070B34 30%);
+  min-height: 100vh;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+
+#page-switcher {
+  position: absolute;
+  width: calc(100% * 3);
+  display: flex;
+  transition: 1s;
+  top: 10rem;
+  height: fit-content;
+}
+
+#page-switcher.page-one {
+  left: 0;
+}
+
+#page-switcher.page-two {
+  left: -100%;
+}
+
+#page-switcher.page-three {
+  left: -200%;
+}
+
+#hide-left {
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  background: linear-gradient(#855988,#070B34 30%);
+  z-index: 3;
+  right: 100%;
+}
+
+#hide-right {
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  background: linear-gradient(#855988,#070B34 30%);
+  z-index: 3;
+  left: 100%;
+}
+
+/* @media (min-width: 1700px) {
+  #card-list {
+    justify-content: center;
+    gap: 10rem;
+  }
+} */
