@@ -1,6 +1,8 @@
 #flowchart {
     width: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
 #flowchart::-webkit-scrollbar {

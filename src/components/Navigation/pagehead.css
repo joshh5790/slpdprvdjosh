@@ -15,7 +15,7 @@
 
 .subheader {
     font-family: monospace;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: rgb(244,244,244, 80%);
     text-shadow: 0 0 20px white, 0 0 20px white, 0 0 20px white;
     transition: 2s;
