@@ -3,13 +3,13 @@ import { Post } from '../types'
 const posts: Post[] = [
     {
         'id': 1,
-        'title': 'I had fallen in love',
+        'title': 'I had fallen in love with my idea of God',
         'content': 'I had fallen in love with my idea of God, but I am incapable of discerning whether or not my idea of God is aligned with the truth. In order to have a proper understanding of anything, especially God, one must understand themselves with exceptional clarity, but the more I learned about what type of beings we are, the more I realized that we are not built for discerning truth. We are blind sheep, who know not their right from their left.\n\n Falling in love with your idea of God is the most that anyone can ever do- perceiving past the ideal and into the real is impossible with human mental and sensory faculties. Real roundabout way of saying Kant was right I guess',
         'tags': ['christianity', 'personal']
     },
     {
         'id': 2,
-        'title': 'Attention is your most valuable asset. Guard it jealously',
+        'title': 'Attention is your most valuable asset',
         'content': '**Your attention determines what you perceive, your perception determines your thoughts, your thoughts determine which beliefs you form, your beliefs determine your values, and your values determine the direction of your life.** \n\n -me, not Gandhi, the order in his quote was wack so there was no actionable way to apply it. Lao Tzu was closer\n\n',
         'tags': ['arguments', 'definitions']
     },

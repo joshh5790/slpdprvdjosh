@@ -1,7 +1,19 @@
+#background {
+  position: absolute;
+  background: linear-gradient(#855988,#070B34 50%);
+  height: 200vh;
+  top: 0;
+  width: 100%;
+  transition: 3s;
+}
+
+#background.night {
+  top: -100%;
+}
+
 #home {
   margin: 0 auto;
   text-align: center;
-  background: linear-gradient(#855988,#070B34 40%);
   min-height: 100vh;
   max-width: 500px;
   margin: auto;

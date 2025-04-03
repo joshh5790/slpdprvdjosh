@@ -3,6 +3,10 @@
     overflow-y: scroll;
 }
 
+#flowchart::-webkit-scrollbar {
+    display: none;
+}
+
 #flowchart-title {
     font-weight: bold;
     margin: 2rem;

@@ -9,7 +9,7 @@
     color: rgb(244,244,244, 80%);
     max-height: 10rem;
     overflow: hidden;
-    transition: 2s;
+    transition: 1s;
     user-select: none;
     cursor: pointer;
 }

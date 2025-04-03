@@ -9,20 +9,23 @@ import Flowchart from './components/Pages/Flowchart'
 
 function App() {
   const [select, setSelect] = useState<string>('one');
+  const [clicked, setClicked] = useState(false)
   // const [gradient, setGradient] = useState<number>(50);
 
   // add subscribe to about page
   
-  return (
-    <div id="home">
-      <PageHead />
-      <Navigation select={select} setSelect={setSelect} />
-      <div id='content' className={`page-${select}`}>
-        <About setSelect={setSelect}/>
-        <Thoughts />
-        <Flowchart />
+  return (<>
+      <div id='background' className={clicked ? 'night' : ''} />
+      <div id="home">
+        <PageHead />
+        <Navigation select={select} setSelect={setSelect} />
+        <div id='content' className={`page-${select}`}>
+          <About clicked={clicked} setClicked={setClicked} setSelect={setSelect} />
+          <Thoughts />
+          <Flowchart />
+        </div>
       </div>
-    </div>
+  </>
   )
 }
 
