@@ -1,14 +1,11 @@
 import './about.css'
 import AboutImg from '../../../assets/about-img.png'
 import Markdown from 'react-markdown'
+import { useAppContext } from '../../../appContext'
 
-interface AboutProps {
-    clicked: boolean,
-    setClicked: (clicked:boolean) => void
-    setSelect: (select:string) => void
-}
+function About() {
+    const { setNavSelect, enter, setEnter } = useAppContext()
 
-function About({ setSelect, clicked, setClicked }: AboutProps) {
     return <div id='about'>
         <div id='about-content'>
             <Markdown>
@@ -25,9 +22,9 @@ function About({ setSelect, clicked, setClicked }: AboutProps) {
         <div id='about-img-container'>
             <img src={AboutImg} id='about-img'/>
             <div id='about-button' onClick={() => {
-                setClicked(true)
-                setTimeout(() => setSelect('two'), 3000)
-            }} className={clicked ? 'clicked' : ''}>LOSE SLEEP WITH ME</div>
+                setEnter(true)
+                setTimeout(() => setNavSelect('two'), 3000)
+            }} className={enter ? 'clicked' : ''}>LOSE SLEEP WITH ME</div>
         </div>
     </div>
 }

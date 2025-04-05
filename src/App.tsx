@@ -1,26 +1,23 @@
 import Navigation from './components/Navigation'
 import './App.css'
-import './components/Navigation/pagehead'
 import PageHead from './components/Navigation/pagehead'
-import { useState } from 'react'
 import About from './components/Pages/About'
 import Thoughts from './components/Pages/Thoughts'
 import Flowchart from './components/Pages/Flowchart'
+import { useAppContext } from './appContext'
 
 function App() {
-  const [select, setSelect] = useState<string>('one');
-  const [clicked, setClicked] = useState(false)
-  // const [gradient, setGradient] = useState<number>(50);
+  const { navSelect, enter } = useAppContext();
 
   // add subscribe to about page
   
   return (<>
-      <div id='background' className={clicked ? 'night' : ''} />
+      <div id='background' className={enter ? 'night' : ''} />
       <div id="home">
         <PageHead />
-        <Navigation select={select} setSelect={setSelect} />
-        <div id='content' className={`page-${select}`}>
-          <About clicked={clicked} setClicked={setClicked} setSelect={setSelect} />
+        <Navigation />
+        <div id='content' className={`page-${navSelect}`}>
+          <About />
           <Thoughts />
           <Flowchart />
         </div>
