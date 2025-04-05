@@ -11,6 +11,7 @@
   z-index: 1;
   height: 3rem;
   background-color: #41305c;
+  overflow: hidden;
 }
 
 .nav-button {
@@ -52,20 +53,39 @@
   left: 66%;
 }
 
-/* #navbar.hideNav {
-  right: -16rem;
+#home-text {
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-family: serif;
+  width: 100%;
   transition: 1s;
-}  
-
-#menu {
-  position: absolute;
-  padding: 1.2rem;
-  top: 0;
-  right: 0;
-  font-size: 1.2rem;
-  transition: 0.3s;
   user-select: none;
-  background-color: #41305c;
+  height: 5rem;
+  overflow: hidden;
+}
+
+#home-title {
+  text-shadow: 0 0 20px white, 0 0 20px white;
+  font-size: 1.5rem;
+}
+
+.subheader {
+  font-family: monospace;
+  font-size: 0.8rem;
   color: rgb(244,244,244, 80%);
-  border-radius: 2rem 0 0 2rem;
-} */
+  text-shadow: 0 0 20px white, 0 0 20px white;
+  transition: 2s;
+}
+
+/* hiding nav and welcome text */
+
+#navbar.hidden {
+  height: 0rem;
+  transition: 2s;
+} 
+
+#home-text.hidden {
+  height: 0rem;
+  opacity: 0;
+  padding: 0;
+}
