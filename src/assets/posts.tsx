@@ -1,6 +1,6 @@
-import { Post } from '../types'
+import { PostType } from '../types'
 
-const posts: Post[] = [
+const posts: PostType[] = [
     {
         'id': 1,
         'title': 'I had fallen in love with my idea of God',
@@ -43,18 +43,18 @@ const posts: Post[] = [
         'content': 'The perceived value each side of a relationship derives from the relationship must be roughly equal for a relationship to endure.',
         'tags': ['definitions', 'human nature']
     },
-    {
-        'id': 8,
-        'title': 'Dreams should remain dreams',
-        'content': 'In the same train of thought as the \'grass is greener\' post, but with a more somber undertone. I find it interesting how the word \'dream\' is used for two extremely different things, the phenomenon that occurs when humans sleep while being synonymous with an extravagant desire. The events experienced in the phenomenon may reflect the mental state of the human, but those dreams have no place in reality- maybe the same should be said for the other definition as well.',
-        'tags': ['edgy teen*', 'one liners']
-    },
-    {
-        'id': 9,
-        'title': 'Death is an adventure',
-        'content': 'A major aspect of the fear of death is fear of the unknown. We can be afraid of pain, but we learn to endure it and even dive into it because we know we will come out of the other end, but fear of death goes far beyond . What happens after death is unknown, but that\'s the beauty of it.\n\n If we set aside the fear of the unknown and take a look into the metaphysical event of death, I think it is quite exciting. **We transition into a completely foreign state of being/nonbeing**- from boring old human experience full of taxes and drama to something entirely different. It\'s most likely oblivion, a simulation could be pretty likely as well, but who knows?',
-        'tags': ['edgy teen*', 'one liners']
-    },
+    // {
+    //     'id': 8,
+    //     'title': 'Dreams should remain dreams',
+    //     'content': 'In the same train of thought as the \'grass is greener\' post, but with a more somber undertone. I find it interesting how the word \'dream\' is used for two extremely different things, the phenomenon that occurs when humans sleep while being synonymous with an extravagant desire. The events experienced in the phenomenon may reflect the mental state of the human, but those dreams have no place in reality- maybe the same should be said for the other definition as well.',
+    //     'tags': ['edgy teen*', 'one liners']
+    // },
+    // {
+    //     'id': 9,
+    //     'title': 'Death is an adventure',
+    //     'content': 'A major aspect of the fear of death is fear of the unknown. We can be afraid of pain, but we learn to endure it and even dive into it because we know we will come out of the other end, but fear of death goes far beyond . What happens after death is unknown, but that\'s the beauty of it.\n\n If we set aside the fear of the unknown and take a look into the metaphysical event of death, I think it is quite exciting. **We transition into a completely foreign state of being/nonbeing**- from boring old human experience full of taxes and drama to something entirely different. It\'s most likely oblivion, a simulation could be pretty likely as well, but who knows?',
+    //     'tags': ['edgy teen*', 'one liners']
+    // },
     // {
         //     'id': 3,
         //     'title': 'Every happy ending is built on a thousand tragedies',

@@ -6,7 +6,10 @@ function Navigation() {
     const { navSelect, setNavSelect, enter } = useAppContext();
 
     return <>
-        <div id="home-text" className={enter ? 'hidden' : ''}>
+        <div id="home-text" className={enter ? 'hidden' : ''} 
+            onClick={() => {
+              navSelect === 'one' ? setNavSelect('zero') : setNavSelect('one')
+            }}>
           <div id="home-title">
             <i style={{"color":"rgb(10,10,10,80%)"}}>sup, im </i> <span style={{"color":"rgb(244,244,244,80%)"}}> thoughts</span>
           </div>

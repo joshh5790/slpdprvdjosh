@@ -26,21 +26,25 @@
 }
 
 #content {
-  width: calc(100% * 3);
+  width: calc(100% * 4);
   display: flex;
   transition: 1s;
   top: 10rem;
   height: calc(100vh - 3rem);
 }
 
+#content.page-zero {
+  transform: translateX(37.5%);
+}
+
 #content.page-one {
-  transform: translateX(33.5%);
+  transform: translateX(12.5%);
 }
 
 #content.page-two {
-  transform: translateX(0);
+  transform: translateX(-12.5%);
 }
 
 #content.page-three {
-  transform: translateX(-33.5%);
+  transform: translateX(-37.5%);
 }
